@@ -1,0 +1,15 @@
+
+.custom-btn-primary {
+    background-color: #07775e; /* Bootstrap's primary blue color */
+    color: white; /* Text color */
+    border: none; /* Optional: to remove the default border */
+    padding: 10px 20px; /* Optional: to give the button padding */
+    font-size: 16px; /* Optional: to adjust font size */
+    border-radius: 5px; /* Optional: to round the corners */
+}
+
+.custom-btn-primary:hover {
+    background-color: grey; /* Replace with your desired hover background color */
+    border-color: grey; /* Replace with your desired hover border color */
+    color: white; /* Replace with your desired hover text color */
+    }
