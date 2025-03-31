@@ -1,16 +1,17 @@
 /**
- * @file Main component of the Tazkify application.
- * @description This file contains the main component of the Tazkify application, which serves as the root component.
+ * @file Portfolio
+ * @description This file contains the main component of the Angular application.
  * @version 1.0.0
  * @date February 28, 2025
  * @author Earl Lamier
  * 
- * Full Stack .NET Developer Program - Humber
+ * 
  * Project: Angular Web Project
  */
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { IconGridComponent } from './icon-grid/icon-grid.component';

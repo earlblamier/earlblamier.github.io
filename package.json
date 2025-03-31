@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href '/earlblamier.github.io/' --output-path=dist/earl-lamier/browser && npx gh-pages -d dist/earl-lamier"
+    "deploy": "ng build --configuration production --base-href '/earlblamier.github.io/' --output-path=dist/earl-lamier/browser && npx gh-pages -d dist/earl-lamier/browser"
   },
   "private": true,
   "dependencies": {
