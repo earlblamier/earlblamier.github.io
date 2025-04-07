@@ -1,8 +1,10 @@
 #!/bin/bash
+# USE git bash to run this script
 # This script builds an Angular application and deploys it to the `docs` folder.
 # earl-lamier to https://earlblamier.github.io/
 # Build the Angular application
 # ng build --configuration production
+rm -rf docs/* # Remove old files in the docs folder
 
 ng build
 
@@ -11,5 +13,5 @@ cp -r docs/browser/* docs/
 
 # Git commit and push changes
 git add .
-git commit -m "Deploy Angular 19 safely with copy"
+git commit -m "Deploy Angular 19 clear local docs and copy safely"
 git push origin main
