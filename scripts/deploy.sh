@@ -4,7 +4,7 @@
 # Build the Angular application
 # ng build --configuration production
 
-ng build --no-interactive
+ng build
 
 # Copy the build output to the docs folder
 cp -r docs/browser/* docs/
