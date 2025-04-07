@@ -1,0 +1,61 @@
+.hero-section {
+  height: 100vh;
+  background: #000; /* fallback for dark sky */
+  overflow: hidden;
+}
+
+canvas#constellation-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-section .container {
+  z-index: 1;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, red, blue); /* Red-to-blue gradient */
+  -webkit-background-clip: text; /* Clip the background to the text (for WebKit browsers) */
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  font-weight: bold; /* Optional: Ensure bold text */
+}
+
+/* Only target .btn-primary class for code-style */
+.btn-primary {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00FF00;
+  background-color: black;
+  border: 2px solid #00FF00;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make the .btn-primary class change on hover */
+.btn-primary:hover {
+  background-color: grey; /* Change to white on hover */
+  color: white; /* Change to white on hover */
+  border-color: grey;
+}
+
+/* Custom style for the button */
+.btn-outline-secondary {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black; /* White background */
+  color: #0d6efd; /* Bootstrap primary color for text (same as primary button) */
+  border-color: #0d6efd; /* Matching primary border color */
+}
+
+.btn-outline-secondary:hover {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d6efd; /* Primary button color on hover */
+  color: white; /* White text on hover */
+  border-color: #0d6efd; /* Matching border on hover */
+}

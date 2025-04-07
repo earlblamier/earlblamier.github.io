@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    background-color: black; /* Set background to black */
+    color: white; /* Set font color to white for contrast */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    color: white; /* Ensure all headings and paragraphs are white */
+  }
+  
+  a {
+    color: #00bfff; /* Light blue for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    color: #ff4500; /* Orange for hover effect */
+  }
+
+.custom-heading {
+color: white; /* Ensure the heading is white */
+}
+
+.custom-secondary-text {
+    color: #d3d3d3; /* Light gray for better readability */
+  }

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   standalone: true, // latest Angular version
   selector: 'app-icon-grid',
   templateUrl: './icon-grid.component.html',
-  styleUrl: './icon-grid.component.scss'
+  styleUrl: './icon-grid.component.css'
 })
 export class IconGridComponent {
 

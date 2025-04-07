@@ -1,0 +1,41 @@
+<div class="b-page-divider"></div>
+<div class="tech-stack-container py-5">
+    <h2 class="text-center mb-4 fs-3 fw-semibold">Core Tech Stack</h2>
+  
+    <div class="container" style="max-width: 720px;">
+      <div *ngFor="let tech of techStack" class="d-flex align-items-center mb-4 p-3 bg-white rounded-4 shadow-sm">
+        <!-- Tech Icon -->
+        <img
+          [src]="tech.icon"
+          [alt]="tech.name + ' icon'"
+          class="me-3"
+          style="width: 40px; height: 40px; border-radius: 8px;"
+        />
+  
+        <!-- Tech Info -->
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <span class="fw-medium text-dark">{{ tech.name }}</span>
+            <small class="text-muted">{{ tech.level }}%</small>
+          </div>
+          <div class="progress" style="height: 8px;">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              [style.width]="tech.level + '%'"
+              [class.bg-success]="tech.level >= 75"
+              [class.bg-warning]="tech.level >= 50 && tech.level < 75"
+              [class.bg-primary]="tech.level >= 25 && tech.level < 50"
+              [class.bg-danger]="tech.level < 25"
+              [attr.aria-valuenow]="tech.level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+  
+
+    </div>
+  </div>
+  
