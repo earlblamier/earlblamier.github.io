@@ -1,28 +1,30 @@
 <header class="bg-dark text-white py-3 border-bottom border-secondary">
   <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
-    <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+    <!-- Logo and Home Link -->
+    <a routerLink="/" class="d-flex align-items-center text-white text-decoration-none">
       <svg class="bi me-2" width="40" height="32" aria-hidden="true">
         <use xlink:href="#bootstrap"></use>
       </svg>
       <span class="fs-4">Earl Lamier</span>
     </a>
 
+    <!-- Navigation Menu -->
     <nav>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="#" class="nav-link active bg-light text-dark" aria-current="page">Home</a>
+          <a routerLink="/" routerLinkActive="active bg-light text-dark" class="nav-link" aria-current="page">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a routerLink="/about" routerLinkActive="active bg-light text-dark" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Services</a>
+          <a routerLink="/stack" routerLinkActive="active bg-light text-dark" class="nav-link">Stack</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Portfolio</a>
+          <a routerLink="/projects" routerLinkActive="active bg-light text-dark" class="nav-link">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a routerLink="/contact" routerLinkActive="active bg-light text-dark" class="nav-link">Contact</a>
         </li>
       </ul>
     </nav>
