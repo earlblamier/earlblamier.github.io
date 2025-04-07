@@ -2,7 +2,9 @@
 # This script builds an Angular application and deploys it to the `docs` folder.
 # earl-lamier to https://earlblamier.github.io/
 # Build the Angular application
-ng build --configuration production
+# ng build --configuration production
+
+ng build --no-interactive
 
 # Copy the build output to the docs folder
 cp -r docs/browser/* docs/
