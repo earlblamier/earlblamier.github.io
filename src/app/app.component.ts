@@ -48,7 +48,7 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class AppComponent {
   title = 'Earl Lamier';
-  cardMessage = 'Projects';
+  cardMessage = '/Projects';
   showBackToTop = false;
 
   @HostListener('window:scroll', [])
