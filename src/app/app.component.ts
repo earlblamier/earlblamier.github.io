@@ -22,6 +22,7 @@ import { MapComponent } from "./map/map.component";
 import { FeatureLeftComponent } from "./feature-left/feature-left.component";
 import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { AboutComponent } from "./about/about.component";
+import { ContactComponent } from './contact/contact.component';
 
 
 @Component({
@@ -38,7 +39,8 @@ import { AboutComponent } from "./about/about.component";
     MapComponent,
     FeatureLeftComponent,
     TechStackComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
 ],
   templateUrl: './app.component.html', // ✅ using external HTML
   styleUrls: ['./app.component.css'],

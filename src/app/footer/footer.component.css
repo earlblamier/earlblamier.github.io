@@ -1,0 +1,15 @@
+.custom-btn-primary {
+    background: linear-gradient(to right, red, blue); /* Red-to-blue gradient */
+    color: white; /* White text for contrast */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .custom-btn-primary:hover {
+    background: linear-gradient(to right, blue, red); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }

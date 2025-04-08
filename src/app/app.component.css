@@ -18,11 +18,12 @@
     border-radius: 5px;
   }
   
-  .custom-btn-primary-light:hover {
-    background-color: var(--hover-color); /* Hover background */
-    border-color: var(--hover-color); /* Hover border */
-    color: var(--text-light); /* Hover text */
-  }
+.custom-btn-primary-light:hover {
+  background: linear-gradient(to right, blue, red); /* Correct property for gradients */
+  color: var(--text-light); /* Hover text */
+  border: none; /* Optional: Remove border if needed */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
   
   /* Dark Button */
   .custom-btn-primary-dark {

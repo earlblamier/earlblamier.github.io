@@ -40,22 +40,23 @@ canvas#constellation-canvas {
 
 /* Make the .btn-primary class change on hover */
 .btn-primary:hover {
-  background-color: grey; /* Change to white on hover */
+  /* background-color: grey;  *//* Change to white on hover */
   color: white; /* Change to white on hover */
-  border-color: grey;
+  /* border-color: #00FF00; */
+  background: linear-gradient(to right, blue, red);
 }
 
 /* Custom style for the button */
 .btn-outline-secondary {
   font-family: 'Courier New', Courier, monospace;
   background-color: black; /* White background */
-  color: #0d6efd; /* Bootstrap primary color for text (same as primary button) */
-  border-color: #0d6efd; /* Matching primary border color */
+  color: #6C63FF; /* Bootstrap primary color for text (same as primary button) */
+  border-color: #6C63FF; /* Matching primary border color */
 }
 
 .btn-outline-secondary:hover {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #0d6efd; /* Primary button color on hover */
+  background-color: #6C63FF; /* Primary button color on hover */
   color: white; /* White text on hover */
-  border-color: #0d6efd; /* Matching border on hover */
+  border-color: #6C63FF; /* Matching border on hover */
 }
