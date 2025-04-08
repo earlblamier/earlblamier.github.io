@@ -11,7 +11,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent }, // Home route
   { path: 'main', component: MainContentComponent }, //  route
   { path: 'about', component: AboutComponent },
-  { path: 'stack', component: TechStackComponent },
+  { path: 'skills', component: TechStackComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' } // Wildcard route for undefined paths
