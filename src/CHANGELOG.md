@@ -1,62 +1,29 @@
-header:
+# Changelog
 
-<header class="bg-dark text-white py-3 border-bottom border-secondary">
-  <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
-    <!-- Logo and Home Link -->
-    <a routerLink="/" class="d-flex align-items-center text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <span class="fs-4">Earl Lamier</span>
-    </a>
+All notable changes to this project will be documented in this file.
 
-    <!-- Navigation Menu -->
-    <nav>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a routerLink="/" 
-          routerLinkActive="active" 
-          class="nav-link" 
-          aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a 
-            routerLink="/" 
-            fragment="about" 
-            routerLinkActive="active" 
-            [routerLinkActiveOptions]="{ exact: false }"
-            class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/" fragment="skills" 
-          routerLinkActive="active" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/" fragment="projects" 
-          routerLinkActive="active" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/" fragment="contact" 
-          routerLinkActive="active " class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+## [1.0.0] - 2025-04-04
+### Added
+- Initial release of the **Earl Lamier Angular Web Project**.
+- Implemented the following components:
+  - `HeaderComponent` with navigation links and logo.
+  - `FooterComponent` for page footer.
+  - `HomeComponent` as the main landing page.
+  - `ProjectsComponent` to showcase projects with cards.
+  - `MapComponent` with an embedded Google Map.
+- Added routing for the application with `RouterModule`.
+- Integrated Bootstrap for responsive design and styling.
+- Added project cards with links to GitHub repositories.
 
-.nav-link:hover {
-  background-color: var(--hover-color) !important;  /* Hover background */
-  /* color: var(--text-light) !important;  */ /* Hover text */
-  color: dark !important; /* Bootstrap default dark */
-/*     background-color: transparent; */
-/*   color: inherit; */
-}
+### Changed
+- Customized the header and footer for a consistent theme.
+- Styled the project cards with dark backgrounds and shadows.
 
-/* Active link styling */
-/* .nav-link.active { */
-/*   color: #212529 !important;  *//* Bootstrap default dark */
-  /* background-color: #f8f9fa !important; */ /* light bg */
-/*   font-family: 'Courier New', Courier, monospace;
-  background-color: transparent;
-  color: inherit;
-} */
+---
+
+## [Unreleased]
+### Planned
+- Add more projects to the `ProjectsComponent`.
+- Enhance the `MapComponent` with dynamic location markers.
+- Implement a contact form in the `ContactComponent`.
+- Add unit tests for all components.

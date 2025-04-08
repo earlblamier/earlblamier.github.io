@@ -31,7 +31,6 @@ import { TestComponent } from '../test/test.component';
     ContactComponent,
     MainContentComponent,
     PartnersComponent,
-    TestComponent
 ],
 })
 export class HomeComponent {
