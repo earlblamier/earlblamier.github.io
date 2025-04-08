@@ -126,3 +126,8 @@ height: 4px; /* Adjust the height of the divider */
 background: linear-gradient(to right, red, blue); /* Red-to-blue gradient */
 border: none; /* Remove any border if present */
 }
+
+/* router link active class */
+html {
+  scroll-behavior: smooth;
+}

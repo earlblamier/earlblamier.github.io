@@ -1,32 +1,55 @@
-<header class="bg-dark text-white py-3 border-bottom border-secondary">
-  <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
-    <!-- Logo and Home Link -->
-    <a routerLink="/" class="d-flex align-items-center text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <span class="fs-4">Earl Lamier</span>
-    </a>
+<header class="bg-dark text-white border-bottom border-secondary py-3">
 
-    <!-- Navigation Menu -->
-    <nav>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a routerLink="/" routerLinkActive="active bg-light text-dark" class="nav-link" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/about" routerLinkActive="active bg-light text-dark" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/stack" routerLinkActive="active bg-light text-dark" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/projects" routerLinkActive="active bg-light text-dark" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/contact" routerLinkActive="active bg-light text-dark" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
+
+    <!-- Logo -->
+      <a routerLink="/" class="d-flex align-items-center text-white text-decoration-none">
+        <svg class="bi me-2" width="20" height="20" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4 fw-medium  ">Earl Lamier</span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav nav-pills gap-3">
+          <li class="nav-item">
+            <a routerLink="/" 
+              routerLinkActive="active" 
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="nav-link text-white px-4 rounded-3 hover-bg">
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/" 
+              fragment="about" 
+              routerLinkActive="active"
+              class="nav-link text-white px-4 rounded-3 hover-bg">
+              About</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/" 
+              fragment="skills" 
+              routerLinkActive="active"
+              class="nav-link text-white px-4 rounded-3 hover-bg">
+              Skills</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/" 
+              fragment="projects" 
+              routerLinkActive="active"
+              class="nav-link text-white px-4 rounded-3 hover-bg">
+              Projects</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/" 
+              fragment="contact" 
+              routerLinkActive="active"
+              class="nav-link text-white px-4 rounded-3 hover-bg">
+              Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div> <!-- /d-flex --> 
+
 </header>
