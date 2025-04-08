@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { HostListener } from '@angular/core';
 import { ContactComponent } from '../contact/contact.component';
 import { MainContentComponent } from "../main-content/main-content.component";
+import { PartnersComponent } from '../partners/partners.component';
+import { TestComponent } from '../test/test.component';
 
 @Component({
   standalone: true,
@@ -27,7 +29,9 @@ import { MainContentComponent } from "../main-content/main-content.component";
     IconGridComponent,
     MapComponent,
     ContactComponent,
-    MainContentComponent
+    MainContentComponent,
+    PartnersComponent,
+    TestComponent
 ],
 })
 export class HomeComponent {
