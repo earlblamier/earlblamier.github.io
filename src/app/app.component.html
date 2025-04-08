@@ -1,6 +1,14 @@
 
 <header>
   <app-header></app-header>
+  <button
+      *ngIf="showBackToTop"
+      class="btn back-to-top"
+      (click)="scrollToTop()"
+      aria-label="Back to Top"
+    >
+    <i class="bi bi-arrow-up-circle-fill fs-3"></i>
+  </button>
   <router-outlet></router-outlet>
 </header>
 
