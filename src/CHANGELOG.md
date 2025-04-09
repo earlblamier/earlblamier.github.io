@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-04-09
+### Added
+- Implemented a custom glowing cursor with highlights using CSS and JavaScript.
+- Added a "burst of stars" effect when hovering over the `www.earl-lamier.dev` URL in the `MainContentComponent`.
+- Enhanced the `MainContentComponent` with a constellation canvas animation in the background.
+
+### Fixed
+- Resolved TypeScript errors related to uninitialized properties (`cursor` and `starContainer`) in `AppComponent` and `MainContentComponent`.
+- Fixed `mt-5` and `pt-5` spacing issues for the `www.earl-lamier.dev` text in `MainContentComponent`.
+
+### Changed
+- Updated the `MainContentComponent` layout to improve spacing and alignment for the hero section.
+- Adjusted the `fancy-url` styling for better visibility and responsiveness.
+
+---
+
 ## [1.0.0] - 2025-04-08
 ### Added
 - Enabled fragment scrolling and scroll position restoration in the router configuration.
