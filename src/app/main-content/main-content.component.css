@@ -60,3 +60,57 @@ canvas#constellation-canvas {
   color: white; /* White text on hover */
   border-color: #6C63FF; /* Matching border on hover */
 }
+
+/* Fancy URL Styling */
+.fancy-url {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* White text for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Star Container */
+#star-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 10;
+}
+
+/* Star Styling */
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: star-burst 1s ease-out forwards;
+}
+
+/* Burst Star Animation */
+@keyframes star-burst {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 100px), calc(var(--y) * 100px)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.burst-star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}

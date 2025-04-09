@@ -8,6 +8,9 @@ import { Component, AfterViewInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None, // Use this if you want to apply global styles
 })
 export class MainContentComponent implements AfterViewInit {
+
+  private starContainer!: HTMLDivElement; // Declare starContainer as a class property
+
   ngAfterViewInit(): void {
     const canvas = document.getElementById('constellation-canvas') as HTMLCanvasElement;
     const ctx = canvas.getContext('2d');
@@ -57,7 +60,49 @@ export class MainContentComponent implements AfterViewInit {
     }
   
     draw();
-  }
   
 
+
+    // Burst effect logic for the URL
+    const urlElement = document.getElementById('burst-url');
+    this.starContainer = document.createElement('div'); // Initialize starContainer
+    this.starContainer.id = 'star-container';
+    this.starContainer.style.position = 'absolute';
+    this.starContainer.style.top = '0';
+    this.starContainer.style.left = '0';
+    this.starContainer.style.width = '100%';
+    this.starContainer.style.height = '100%';
+    this.starContainer.style.pointerEvents = 'none';
+    document.body.appendChild(this.starContainer);
+
+    if (urlElement) {
+      urlElement.addEventListener('mouseenter', (event) => {
+        const rect = urlElement.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        for (let i = 0; i < 30; i++) {
+          const star = document.createElement('div');
+          star.className = 'burst-star';
+          star.style.position = 'absolute';
+          star.style.width = '5px';
+          star.style.height = '5px';
+          star.style.backgroundColor = '#fff';
+          star.style.borderRadius = '50%';
+          star.style.left = `${centerX}px`;
+          star.style.top = `${centerY}px`;
+          star.style.transform = `translate(-50%, -50%)`;
+          star.style.animation = `star-burst 1s ease-out forwards`;
+          star.style.setProperty('--x', (Math.random() * 2 - 1).toString());
+          star.style.setProperty('--y', (Math.random() * 2 - 1).toString());
+          this.starContainer.appendChild(star);
+
+          // Remove the star after the animation ends
+          star.addEventListener('animationend', () => {
+            star.remove();
+          });
+        }
+      });
+    }
+  }
 }

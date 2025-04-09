@@ -131,3 +131,41 @@ border: none; /* Remove any border if present */
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom cursor */
+/* Remove the default cursor */
+body {
+  cursor: none; /* Hide default cursor */
+  position: relative;
+}
+
+/* Create the glowing/spotlight effect cursor */
+.cursor {
+  position: absolute;
+  pointer-events: none;
+  width: 40px; /* Adjust the size of the cursor */
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.2); /* Light glow effect */
+  filter: blur(4px); /* Adds a slight blur to the cursor */
+  transition: transform 0.1s ease-out, background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  animation: spotlightEffect 3s infinite;
+}
+
+/* Add an animation for the spotlight effect */
+@keyframes spotlightEffect {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 35px rgba(255, 255, 255, 0.4), 0 0 45px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    transform: scale(0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.2);
+  }
+}
