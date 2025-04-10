@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-04-09
+### Added
+- Added a "Join Our Waiting List" subscription form in the `FooterComponent`.
+- Included social media links (Facebook, Instagram) with icons in the `FooterComponent`.
+- Enhanced the `AboutComponent` with a "Blogs" section linking to Blogspot.
+- Added rounded corners to certification icons in the `AboutComponent`.
+
+### Fixed
+- Resolved issues with Bootstrap Icons not displaying properly in the `FooterComponent`.
+- Fixed alignment issues in the `FooterComponent` for social media links.
+
+### Changed
+- Updated the `FooterComponent` layout for better spacing and responsiveness.
+- Improved the styling of the "Certifications" section in the `AboutComponent`.
+
+---
+
 ## [1.1.0] - 2025-04-09
 ### Added
 - Implemented a custom glowing cursor with highlights using CSS and JavaScript.
@@ -60,3 +77,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Initial setup of the Angular project.
 - Implemented basic routing and component structure.
+
+
+## deploy bash script
+- $ ./scripts/deploy.sh
