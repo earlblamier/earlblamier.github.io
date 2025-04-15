@@ -1,0 +1,88 @@
+/* Global Styles */
+
+  
+  /* Domain Expertise Section */
+  .domain-expertise {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    color: #f0f0f0; /* Light color for headings */
+    margin-bottom: 20px;
+  }
+  
+  /* Expertise Container */
+  .expertise-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* Expertise Items */
+  .expertise-item {
+    background-color: #fff; /* White background for expertise items */
+    color: #333; /* Dark text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .expertise-item img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .expertise-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333; /* Dark color for subheadings */
+  }
+  
+  .expertise-item p {
+    color: #666; /* Light gray color for descriptions */
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+  
+  /* Specialties List */
+  .specialties-list {
+    grid-column: span 2;
+    margin-top: 40px;
+  }
+  
+  /* Specialties List Styling */
+  .specialties-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .specialties-list li {
+    background-color: #eef2f4; /* Light background for list items */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+
+  /* Section after Divider (Dark background) */
+  .domain-expertise.bg-black {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+  }
+  

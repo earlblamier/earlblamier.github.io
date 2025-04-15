@@ -13,6 +13,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { MainContentComponent } from "../main-content/main-content.component";
 import { PartnersComponent } from '../partners/partners.component';
 import { TestComponent } from '../test/test.component';
+import { DomainExpertiseComponent } from "../domain-expertise/domain-expertise.component";
 
 @Component({
   standalone: true,
@@ -31,6 +32,7 @@ import { TestComponent } from '../test/test.component';
     ContactComponent,
     MainContentComponent,
     PartnersComponent,
+    DomainExpertiseComponent
 ],
 })
 export class HomeComponent {
